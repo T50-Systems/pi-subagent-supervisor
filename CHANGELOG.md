@@ -2,6 +2,12 @@
 
 All notable changes to this project are documented in this file.
 
+## [0.1.1] - 2026-07-16
+
+### Fixed
+- Keep the stop-RPC timeout referenced so Node 22 waits for unavailable-RPC fallback instead of cancelling pending tests or shutdown handling.
+- Let both CI operating-system jobs finish independently by disabling matrix fail-fast.
+
 ## [0.1.0] - 2026-07-16
 
 ### Added
@@ -13,3 +19,4 @@ All notable changes to this project are documented in this file.
 - Privacy-minimized limit events and a `/subagent-supervisor` status command.
 
 [0.1.0]: https://github.com/T50-Systems/pi-subagent-supervisor/releases/tag/v0.1.0
+[0.1.1]: https://github.com/T50-Systems/pi-subagent-supervisor/releases/tag/v0.1.1

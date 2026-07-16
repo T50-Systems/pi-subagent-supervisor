@@ -22,7 +22,6 @@ export function stopSubagent(
 		const onAbort = () => finish(false);
 		const unsubscribe = events.on(replyChannel, (reply) => finish(reply?.success === true));
 		const timer = setTimeout(() => finish(false), timeoutMs);
-		timer.unref?.();
 		if (signal?.aborted) {
 			finish(false);
 			return;

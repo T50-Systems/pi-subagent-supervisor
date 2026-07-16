@@ -31,7 +31,7 @@ The registry is necessary because lifecycle events currently publish totals only
 ## Installation
 
 ```bash
-pi install git:github.com/T50-Systems/pi-subagent-supervisor@v0.1.0
+pi install git:github.com/T50-Systems/pi-subagent-supervisor@v0.1.1
 ```
 
 Install `@tintinweb/pi-subagents` separately. Reload or restart Pi after installation.

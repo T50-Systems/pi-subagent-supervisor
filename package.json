@@ -1,6 +1,6 @@
 {
   "name": "@t50-systems/pi-subagent-supervisor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Runtime budgets and automatic cancellation companion for pi-subagents",
   "type": "module",
   "license": "MIT",
