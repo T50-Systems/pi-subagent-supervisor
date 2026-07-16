@@ -1,0 +1,38 @@
+{
+  "name": "@t50-systems/pi-subagent-supervisor",
+  "version": "0.1.0",
+  "description": "Runtime budgets and automatic cancellation companion for pi-subagents",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/T50-Systems/pi-subagent-supervisor.git"
+  },
+  "files": [
+    "extensions",
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test:unit": "node --test tests/*.test.mjs",
+    "test": "npm run typecheck && npm run test:unit",
+    "verify:release": "node scripts/verify-release.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": ">=0.80.0",
+    "@tintinweb/pi-subagents": ">=0.14.1 <0.15.0"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.80.3",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/index.ts"
+    ]
+  }
+}
