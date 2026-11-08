@@ -94,6 +94,6 @@ Prompts, descriptions, model output, custom agent names, and tool arguments are 
 ## Development
 
 ```bash
-npm ci
-npm test
+pnpm install --frozen-lockfile
+pnpm test
 ```
