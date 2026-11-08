@@ -18,7 +18,7 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test:unit": "node --test tests/*.test.mjs",
-    "test": "npm run typecheck && npm run test:unit",
+    "test": "pnpm run typecheck && pnpm run test:unit",
     "verify:release": "node scripts/verify-release.mjs"
   },
   "peerDependencies": {
@@ -34,5 +34,6 @@
     "extensions": [
       "./extensions/index.ts"
     ]
-  }
+  },
+  "packageManager": "pnpm@10.34.9"
 }
